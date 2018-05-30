@@ -109,29 +109,11 @@ def generatekey():
     emailTo = input('Email address for conformation email: ')
 
 
-
-
     message.add_bcc(emailTo)
-    message.add_to('Undisclosed recipients <securekeys@liverez.com>')
-    message.set_from("Securekeys@liverez.com")
+    message.add_to('TO EMAIL (USE BCC FOR SECURITY)')
+    message.set_from("FROMEMAIL")
     message.set_subject("Recent Digicert SSL Certificate Order Placed")
-    message.set_text("""Hello Partner,
-Your DigiCert SSL Certificate order has been placed and is pending your verification. If the new order is not issued soon, your current SSL Certificate will expire. As a result, your secure, online, check out page will no longer function along with your LiveScore survey system.
-We recommend you contact DigiCert directly to help ensure your SSL Certificate is issued in a timely manner.
-
-Your Order Number: """+idVal+"""
-
-Your Current SSL Certificate Expiration:
-
-
-DigiCert Business Contact Associated with Order (Please confirm this information is correct):
-
-
-DigiCert Support Phone Number: 801-701-9600
-
-DigiCert Support Email: support@digicert.com
-
-Most of the time, DigiCert attempts an outbound call to the business contact listed in their system. DigiCert requires this phone call as part of their verification process before your SSL Certificate can be issued. If your business contact number listed above is incorrect, please let me know as soon as possible so I can update the order information.""")
+    message.set_text("""EMAIL MESSAGE GOES HERE.""")
 
 
 
