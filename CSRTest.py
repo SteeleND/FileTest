@@ -58,10 +58,10 @@ def generatekey():
             
     builder = CSRBuilder(
         {
-            'country_name': 'MX',
-            'state_or_province_name': 'Playa del Carmen',
-            'locality_name': 'Playa del Carmen',
-            'organization_name': 'Moskito Inc.',
+            'country_name': 'US',
+            'state_or_province_name': '',
+            'locality_name': '',
+            'organization_name': '',
             'common_name': 'secure.' + domainName,
         },
         public_key
@@ -75,7 +75,7 @@ def generatekey():
 
 
     headers = {
-        "X-DC-DEVKEY": "BUTDX2BNZQW523AY3DKRFXTFZ2Z5VAWQO7IB5IE777HB5PSAOPVQ27W5MFZ2UHXKOLLG2CDB4ZRNJOGFI",
+        "X-DC-DEVKEY": "#",
         "Content-Type": "application/json",
     }
     p = json.dumps({
@@ -104,7 +104,7 @@ def generatekey():
     idVal = api_json['id']
     print(idVal)
 
-    sg = sendgrid.SendGridClient('lrsmtpserver ', 'v1ct0r@D@rt1ing')
+    sg = sendgrid.SendGridClient('# ', '#')
     message = sendgrid.Mail()
     emailTo = input('Email address for conformation email: ')
 
