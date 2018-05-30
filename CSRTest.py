@@ -21,7 +21,7 @@ public_key, private_key = asymmetric.generate_pair('rsa',
 now = datetime.datetime.now()  # generates timestamp for the filenames
 date = now.date()
 sg = sendgrid.SendGridClient('# ',
-                             'Password')  # Input username and password of SendGrid account to send emails.
+                             'Passwod')  # Input username and password of SendGrid account to send emails.
 message = sendgrid.Mail()
 errorToEmail = 'n.steele@liverez.com'  # email that it sends error reports too.
 
