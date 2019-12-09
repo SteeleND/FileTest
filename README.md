@@ -1,6 +1,5 @@
 # CSR Generator using CSRBuilder Library
-#
-# CSRBuilder docs-
-# https://github.com/wbond/csrbuilder/blob/master/docs/api.md#subject-attribute
 # @author Nathan Steele
 #
+
+This is a script that generates a CSR for SSL Certificate generation. This was used for generating CSR's for over 900 websites SSL annually.
